@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="chat-app-container">
+        <!-- Sidebar with chat list -->
+        <div class="sidebar" id="sidebar">
+            <div class="header">
+                <div class="d-flex justify-content-between align-items-center my-2">
+                    <i class="fa-solid fa-bars fs-3"></i>
+                    <div class="search-container">
+                        <input type="search" class="search-input" placeholder="Search...">
+                    </div>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">All Chats</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="chat-list" id="chatList">
+                <!-- Chat Items -->
+                <div class="chat-item" data-index="0">
+                    <img src="/assets/image/1.png" alt="Randolph" class="profile-pic">
+                    <div class="chat-content">
+                        <div class="chat-name">Randolph</div>
+                        <div class="chat-message"><i class="fa-solid fa-check text-check"></i> Team is awesome</div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="message-time">10/30/19</div>
+                        <div class="unread">Send</div>
+                    </div>
+                </div>
+                
+                <div class="chat-item active" data-index="1">
+                    <img src="/assets/image/2.jpg" alt="Andrew Parker" class="profile-pic">
+                    <div class="chat-content">
+                        <div class="chat-name">Andrew Parker</div>
+                        <div class="chat-message"><i class="fa-solid fa-check text-check"></i><i class="fa-solid fa-check text-check"></i> What kind of strategy is better?</div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="message-time">10/30/19</div>
+                        <div class="unread">Seen</div>
+                    </div>
+                </div>
+                
+                <div class="chat-item" data-index="2">
+                    <img src="/assets/image/3.jpg" alt="Karen Castillo" class="profile-pic">
+                    <div class="chat-content">
+                        <div class="chat-name">Karen Castillo</div>
+                        <div class="chat-message"><i class="fas fa-microphone voice-indicator"></i> Voice message</div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="message-time">10/30/19</div>
+                        <div class="unread status-unread">2</div>
+                    </div>
+                </div>
+                
+                <div class="chat-item" data-index="3">
+                    <img src="/assets/image/4.png" alt="Maximillian Jacobson" class="profile-pic">
+                    <div class="chat-content">
+                        <div class="chat-name">Maximillian Jacobson</div>
+                        <div class="chat-message"><i class="fa-solid fa-camera"></i> Photo</div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="message-time">10/30/19</div>
+                        <div class="unread status-unread">1</div>
+                    </div>
+                </div>
+                
+                <div class="chat-item" data-index="4">
+                    <img src="/assets/image/4.png" alt="Maximillian Jacobson" class="profile-pic">
+                    <div class="chat-content">
+                        <div class="chat-name">Maximillian Jacobson</div>
+                        <div class="chat-message">What kind of strategy is better?</div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="message-time">10/30/19</div>
+                        <div class="unread status-unread">3</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Chat content area -->
+        <div class="chat-content-area" id="chatContentArea">
+            <div class="chat-header">
+                <div class="back-button" id="backButton">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <img src="/assets/image/2.jpg" alt="Andrew Parker" class="profile-pic">
+                <div>
+                    <div class="chat-title">Andrew Parker</div>
+                    <div class="chat-status">Online</div>
+                </div>
+            </div>
+            
+            <div class="message-area">
+                <!-- Messages would go here -->
+                <div class="no-chat-selected">
+                    <i class="fas fa-comments"></i>
+                    <h4>Write somthing to start ...</h4>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <button class="btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <input type="text" class="message-input" placeholder="Type a message...">
+                <button class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/js/index.js"></script>
+    
+</body>
+</html>
